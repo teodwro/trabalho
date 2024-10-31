@@ -19,6 +19,7 @@ final class UsuarioController extends Controller {
             "usuarios" => $data
         ]);
     }
+
     public function form(){
         $id = $_GET['id'] ?? 0;
 
@@ -29,7 +30,7 @@ final class UsuarioController extends Controller {
             $vo = $model->selectOne(new UsuarioVO($id));
         }
         $this->loadView("formUsuario", [
-            "usuarios" => $vo
+            "usuario" => $vo
         ]);
     }
         

@@ -16,7 +16,7 @@ final class ProdutoVO extends VO {
         $this->id_categoria = $id_categoria;
         $this->categoria = $categoria;
         $this->nome = $nome;
-        $this->descricao = $descircao;
+        $this->descricao = $descricao;
         $this->preco = $preco;
         $this->foto = $foto;
     }

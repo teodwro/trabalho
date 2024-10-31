@@ -43,6 +43,7 @@ final class UsuarioModel extends Model {
 
         return $db->execute($query, $binds);
     }
+
     public function update($vo) {
         $db = new Database();
         if(empty($vo->getSenha())){
@@ -56,7 +57,7 @@ final class UsuarioModel extends Model {
         }else{
             
             $query = "UPDATE usuarios SET login = :login, 
-                        senha = :senha, 
+                        senha = :senha
                         WHERE id = :id";
             $binds = [
                 ":login" => $vo->getLogin(),
@@ -67,6 +68,7 @@ final class UsuarioModel extends Model {
 
         return $db->execute($query, $binds);
     }
+
     public function delete($vo) {
         $db = new Database();
         $query = "DELETE FROM usuarios WHERE id = :id";

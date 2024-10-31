@@ -6,6 +6,7 @@
     <title>Sistema de Catálogo de Produtos</title>
 </head>
 <body>
+    <?php include("includes/menu.php"); ?>
     <h1>Sistema de Catálogo - Usuários</h1>
     <a href="usuarios.php">Voltar</a>
     <form action="salvarUsuario.php" method="POST">
